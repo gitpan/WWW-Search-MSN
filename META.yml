@@ -1,0 +1,23 @@
+---
+name: WWW-Search-MSN
+version: 0.01
+author:
+  - Shlomi Fish <shlomif@iglu.org.il>
+abstract: The great new WWW::Search::MSN!
+license: bsd
+resources:
+  license: http://www.opensource.org/licenses/bsd-license.php
+requires:
+  HTML::TreeBuilder: 0
+  Scalar::Util: 0
+  Test::More: 0
+  WWW::Search: 2.523
+  WWW::Search::Test: 2.265
+provides:
+  WWW::Search::MSN:
+    file: lib/WWW/Search/MSN.pm
+    version: 0.01
+generated_by: Module::Build version 0.2704
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
