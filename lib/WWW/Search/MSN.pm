@@ -12,7 +12,7 @@ use Scalar::Util ();
 
 =head1 NAME
 
-WWW::Search::MSN - The great new WWW::Search::MSN!
+WWW::Search::MSN - backend for searching search.msn.com
 
 =head1 VERSION
 
@@ -20,7 +20,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.0101';
 
 use vars qw(@ISA);
 
@@ -30,8 +30,6 @@ use vars qw(@ISA);
 
 This module provides a backend of L<WWW::Search> to search using 
 L<http://search.msn.com/>.
-
-Perhaps a little code snippet.
 
     use WWW::Search;
 
@@ -198,6 +196,17 @@ I will be notified, and then you'll automatically be notified of progress on
 your bug as I make changes.
 
 =head1 ACKNOWLEDGEMENTS
+
+Funded by L<http://www.deviatemedia.com/> and
+L<http://www.redtreesystems.com/>.
+
+=head1 DEVELOPMENT
+
+Source code is version-controlled in a Subversion repository in Berlios:
+
+L<http://svn.berlios.de/svnroot/repos/web-cpan/WWW-Search/trunk/>
+
+One can find the most up-to-date version there.
 
 =head1 COPYRIGHT & LICENSE
 
