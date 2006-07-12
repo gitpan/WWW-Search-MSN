@@ -1,6 +1,6 @@
 ---
 name: WWW-Search-MSN
-version: 0.0101
+version: 0.0102
 author:
   - Shlomi Fish <shlomif@iglu.org.il>
 abstract: backend for searching search.msn.com
@@ -8,6 +8,7 @@ license: bsd
 resources:
   license: http://www.opensource.org/licenses/bsd-license.php
 requires:
+  Encode: 0
   HTML::TreeBuilder: 0
   Scalar::Util: 0
   Test::More: 0
@@ -16,8 +17,8 @@ requires:
 provides:
   WWW::Search::MSN:
     file: lib/WWW/Search/MSN.pm
-    version: 0.0101
-generated_by: Module::Build version 0.2704
+    version: 0.0102
+generated_by: Module::Build version 0.2801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
