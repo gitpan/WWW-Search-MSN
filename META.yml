@@ -1,6 +1,6 @@
 ---
 name: WWW-Search-MSN
-version: 0.0102
+version: 0.0103
 author:
   - Shlomi Fish <shlomif@iglu.org.il>
 abstract: backend for searching search.msn.com
@@ -17,7 +17,7 @@ requires:
 provides:
   WWW::Search::MSN:
     file: lib/WWW/Search/MSN.pm
-    version: 0.0102
+    version: 0.0103
 generated_by: Module::Build version 0.2801
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

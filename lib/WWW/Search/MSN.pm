@@ -20,7 +20,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.0102';
+our $VERSION = '0.0103';
 
 use vars qw(@ISA);
 
@@ -109,6 +109,10 @@ sub parse_tree
         
         my $header_div = $tree->look_down("_tag", "div", "id", "header");
 
+        if (!defined($header_div))
+        {
+            return 0;
+        }
         my $h5 = $header_div->look_down("_tag", "h5");
 
         if ($h5->as_text() =~ m{^\s*Page\s*\d+\s*of\s*([\d,]+)\s*results})
