@@ -1,8 +1,8 @@
 ---
 name: WWW-Search-MSN
-version: 0.0103
+version: 0.0104
 author:
-  - Shlomi Fish <shlomif@iglu.org.il>
+  - 'Shlomi Fish <shlomif@iglu.org.il>'
 abstract: backend for searching search.msn.com
 license: bsd
 resources:
@@ -17,8 +17,8 @@ requires:
 provides:
   WWW::Search::MSN:
     file: lib/WWW/Search/MSN.pm
-    version: 0.0103
-generated_by: Module::Build version 0.2801
+    version: 0.0104
+generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2

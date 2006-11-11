@@ -2,18 +2,18 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'WWW::Search::MSN',
+          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/WWW/Search/MSN.pm',
           'PREREQ_PM' => {
-                           'Encode' => '0',
-                           'HTML::TreeBuilder' => '0',
-                           'Scalar::Util' => '0',
-                           'Test::More' => '0',
+                           'Test::More' => 0,
+                           'Scalar::Util' => 0,
                            'WWW::Search' => '2.523',
-                           'WWW::Search::Test' => '2.265'
-                         },
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [],
-          'PL_FILES' => {}
+                           'HTML::TreeBuilder' => 0,
+                           'WWW::Search::Test' => '2.265',
+                           'Encode' => 0
+                         }
         )
 ;
