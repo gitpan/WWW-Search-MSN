@@ -3,6 +3,8 @@ package WWW::Search::MSN;
 use warnings;
 use strict;
 
+use 5.008;
+
 require WWW::Search;
 
 use WWW::SearchResult;
@@ -16,19 +18,23 @@ WWW::Search::MSN - backend for searching search.msn.com
 
 =head1 VERSION
 
-Version 0.0105
+Version 0.0200
 
 =cut
 
-our $VERSION = '0.0106';
+our $VERSION = '0.0200';
 
 use vars qw(@ISA);
 
 @ISA=(qw(WWW::Search));
 
+=head1 WARNING! THIS MODULE IS DEPRECATED
+
+You should be using L<Bing::Search> instead which uses the API.
+
 =head1 SYNOPSIS
 
-This module provides a backend of L<WWW::Search> to search using 
+This module provides a backend of L<WWW::Search> to search using
 L<http://search.msn.com/>.
 
     use WWW::Search;
@@ -108,7 +114,7 @@ sub parse_tree
     if ($self->{'_MSN_first_retrieve_call'})
     {
         $self->{'_MSN_first_retrieve_call'} = undef;
-        
+
         my $header_div = $tree->look_down("_tag", "div", "id", "results_area");
 
         if (!defined($header_div))

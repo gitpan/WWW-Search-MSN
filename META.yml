@@ -1,24 +1,29 @@
 ---
-name: WWW-Search-MSN
-version: 0.0106
+abstract: 'backend for searching search.msn.com'
 author:
   - 'Shlomi Fish <shlomif@iglu.org.il>'
-abstract: backend for searching search.msn.com
+build_requires: {}
+configure_requires:
+  Module::Build: '0.36'
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.140640'
 license: mit
-resources:
-  license: http://www.opensource.org/licenses/mit-license.php
-requires:
-  Encode: 0
-  HTML::TreeBuilder: 0
-  Scalar::Util: 0
-  Test::More: 0
-  WWW::Search: 2.523
-  WWW::Search::Test: 2.265
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: WWW-Search-MSN
 provides:
   WWW::Search::MSN:
     file: lib/WWW/Search/MSN.pm
-    version: 0.0106
-generated_by: Module::Build version 0.32
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: '0.0200'
+requires:
+  Encode: '0'
+  HTML::TreeBuilder: '0'
+  Scalar::Util: '0'
+  Test::More: '0'
+  WWW::Search: '2.523'
+  WWW::Search::Test: '2.265'
+  perl: '5.008'
+resources:
+  license: http://www.opensource.org/licenses/mit-license.php
+version: '0.0200'
